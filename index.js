@@ -1,7 +1,8 @@
-var moment = require('moment')
+var moment = require('moment-timezone')
 
 module.exports = function (dateTime) {
-  var time = moment(dateTime || new Date())
+  var time = moment(new Date(dateTime)).tz('Europe/Stockholm')
+  
   return {
     time: time.format(),
     hour: time.format('HH'),

@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.15.0"
+    "moment-timezone": "^0.5.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",
